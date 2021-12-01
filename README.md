@@ -1,4 +1,4 @@
-# Anomalous Sound Detection for industrial machines and
+# Anomalous Sound Detection for industrial machines
 
 ## Table of Contents
 1. [Description](#description)
