@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 # Anomalous Sound Detection for predictive maintenance of industrial machines
-=======
-# Anomalous Sound Detection for industrial machines
->>>>>>> 4dff5fe64cd20f3f88a6d3d3450b2aa0ddd88989
 
 ## Table of Contents
 1. [Description](#description)
