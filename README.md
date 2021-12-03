@@ -49,12 +49,12 @@ This project is a part of the Becode.org AI Bootcamp programme. The goal is to p
 ## Repo Architecture
 
 - *(1) README.md* Project documentation
-- *(2) Download folders with audio data.ipynb* Code to download data samples from provided resource
-- *(3) Create a dataframe with files.ipynb* code to create a dataframe and .csv file with filenames
+- *(2) Download folders with audio data.ipynb* A Jupyter Notebook file with code to download data samples from provided resource
+- *(3) Create a dataframe with files.ipynb* A Jupyter Notebook file with code to create a dataframe and .csv file with filenames
 - *(4) anomaly_files.csv* .csv file with filenames of provided samples
-- *(5) Extract feature 6dB machine.ipynb* Code to extract features and targets for 6dB samples of all machines 
-- *(6) ASD_model.ipynb* Code to make a prediction ML model
-- *(7) ASD_model.pkl* pickelised ML model to easily deploy
+- *(5) Extract feature 6dB machine.ipynb* A Jupyter Notebook file with code to extract features and targets for 6dB samples of all machines 
+- *(6) ASD_model.ipynb* A Jupyter Notebook file with code to make a prediction ML model
+- *(7) ASD_model.pkl* A pickelised ML model to easily deploy
 
 ## Installation
 
