@@ -15,28 +15,64 @@
 1. [Personal situation](#personal-situation)
 
 ## Description
-This project is a part of the Becode.org AI Bootcamp programme. The goal is to produce a supervised classifier for anomalous sound detection in industrial machines for a fictional company Acme Corporation. 
+This project is a part of the Becode.org AI Bootcamp programme. The goal is to produce a supervised classifier for anomalous sound detection in industrial machines for a fictional company Acme Corporation. Data samples of normal and abnormal sounds of valves, pumps, fans and sliders are provided. 
 
 ![factory](https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
 
 ## Objectives
 
-### Challenges
+- Be able to work and process data from audio format
+- Find insights from data, build hypothesis and define conclusions
+- Build machine learning models for predictive classification and/or regression
+- Select the right performance metrics for your model
+- Evaluate the distribution of data points and evaluate its influence in the model
+- Be able to identify underfitting or overfitting that might exist on the model
+- Tuning parameters of the model for better performance
+- Select the model with better performance and following your customer's requirements
+- Define the strengths and limitations of the model
+
+### Strengths
+
+- The model works for all the types of machines with acceptable accuracy.
+- The model provides intial insights to detect abnormalities.
 
 ### Limitations
 
+- Undersampled examples of abnormal sounds
+- Overfitting in the current model 
+
 ### Further Developments
+
+- Finetuning the model per machine
+- Trying different machine learning techniques
 
 ## Repo Architecture
 
+*(1) README.md* Project documentation
+*(2) Download folders with audio data.ipynb* Code to download data samples from provided resource
+*(3) Create a dataframe with files.ipynb* code to create a dataframe and .csv file with filenames
+*(4)anomaly_files.csv* .csv file with filenames of provided samples
+*(5) Extract feature 6dB machine.ipynb* Code to extract features and targets for 6dB samples of all machines 
+*(6) ASD_model.ipynb* Code to make a prediction ML model
+*(7) ASD_model.pkl* pickelised ML model to easily deploy
+
 ## Installation
+
+ *git clone* the repo 
+
 
 ## Usage
 
-## Visuals
+To use this model run (2) and (3) to collect the data samples and extract the features by running file (5). Next run (6) or use (7) to run a prediction.
 
 ## Timeline
 
+The project took 4 working days to write a code and was presented on the 5th day.
+
 ## Personal situation
+
+Contributors: [mokegg](https://github.com/mokegg), [kpranke](https://github.com/kpranke)
+
+We arecurrently participating in the Becode.org AI Bootcamp to upskill into a career in data science.
 
 **[Back to top](#table-of-contents)**
