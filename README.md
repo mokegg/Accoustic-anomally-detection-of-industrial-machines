@@ -73,6 +73,6 @@ The project took 4 working days to write a code and was presented on the 5th day
 
 Contributors: [mokegg](https://github.com/mokegg), [kpranke](https://github.com/kpranke)
 
-We arecurrently participating in the Becode.org AI Bootcamp to upskill into a career in data science.
+We are currently participating in the Becode.org AI Bootcamp to upskill into a career in data science.
 
 **[Back to top](#table-of-contents)**
