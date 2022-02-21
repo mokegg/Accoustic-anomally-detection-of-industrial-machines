@@ -1,5 +1,6 @@
 
-# Anomalous Sound Detection for predictive maintenance of industrial machines
+# Anomally-detection-of-industrial-machines-part-1
+  ## (For predictive maintenance)
 
 ## Table of Contents
 1. [Description](#description)
