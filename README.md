@@ -1,20 +1,6 @@
 
 # Anomally-detection-of-industrial-machines-part-1
   ## (For predictive maintenance)
-
-## Table of Contents
-1. [Description](#description)
-1. [Objectives](#objectives)
-	1. [Challenges](#challenges)
-	2. [Limitations](#limitations)
-	3. [Further developments](#further-developments)
-1. [Repo Architecture](#repo-architecture)
-1. [Installation](#installation)
-1. [Usage](#usage)
-1. [Visuals](#visuals)
-1. [Timeline](#timeline)
-1. [Personal situation](#personal-situation)
-
 ## Description
 This project is a part of the Becode.org AI Bootcamp programme. The goal is to produce a supervised classifier for anomalous sound detection in industrial machines for a fictional company Acme Corporation. Data samples of normal and abnormal sounds of valves, pumps, fans and sliders are provided. 
 
@@ -32,6 +18,22 @@ This project is a part of the Becode.org AI Bootcamp programme. The goal is to p
 - Select the model with better performance and following your customer's requirements
 - Define the strengths and limitations of the model
 
+## Explorative data analysis
+Acoustic data samples for 4 machine elements are given. Audio samples are recorded at three different signal to noise ratios (-6dB, 0dB, 6dB). Initial analysis is based on 6dB. This is because there is less noise in the data as compared to the other recordings. In addition, there are 4 models per each machine element. Moreover, it has been noticed that the data for abnormal sounds is undersampled.
+
+![Normal and abnormal fan sound signals](pics/signals.png) 
+
+
+## Feature Extraction and results
+The features used to train the ML model are Mel Frequency Cepstral Coefficents (MFCCs). They are features that combine the time-domain and frequency domain features of the sound wave. The MFCC uses the MEL scale to divide the frequency band to sub-bands and then extracts the Cepstral Coefficents using Discrete Cosine Transform (DCT). MEL scale is based on the way humans distinguish between frequencies which makes it very convenient to process sounds.
+
+![FFT](pics/fft_normal_fan.png)
+![Melspectrogram](pics/MelSpectrogram.png)
+
+The AI model was trained with 70% of the data, 15% of data used for testing, and 15% for validation. Different classifier algorithms were explored. Using RandomForestClassifier, weighted average F1-score of 0.96 was achieved.
+![Roc curve](pics/roc_curve.png)
+<img src="pics/report.png" width="420" height="250">
+
 ### Strengths
 
 - The model works for all the types of machines with acceptable accuracy.
@@ -40,7 +42,7 @@ This project is a part of the Becode.org AI Bootcamp programme. The goal is to p
 ### Limitations
 
 - Undersampled examples of abnormal sounds
-- Overfitting in the current model 
+- Overfitting in the current model
 
 ### Further Developments
 
